@@ -8,12 +8,15 @@ template.innerHTML = `
         :host {
             display: inline-block;
             border-radius: 3px;
-            color: white;
             padding: 0.5em 1em;
             cursor: pointer;
             box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
             transition: all ease 0.3s;
             opacity: 1;
+            -webkit-user-select: none;
+            -moz-user-select: none; 
+             -ms-user-select: none; 
+                 user-select: none; 
         }
 
         :host(:hover) {
@@ -21,7 +24,7 @@ template.innerHTML = `
         }
 
         :host(:active) {
-            opacity: 0.9;
+            opacity: 0.8;
             boxshadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         }
 

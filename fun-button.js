@@ -6,9 +6,27 @@ const template = document.createElement("template");
 template.innerHTML = `
     <style>
         :host {
-            display: block;
+            display: inline-block;
+            border-radius: 3px;
+            color: white;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all ease 0.3s;
+            opacity: 1;
         }
+
+        :host(:hover) {
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+
+        :host(:active) {
+            opacity: 0.9;
+            boxshadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
     </style>
+    <slot></slot>
 `;
 
 /**

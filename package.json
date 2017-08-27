@@ -1,0 +1,26 @@
+{
+  "name": "fun-button",
+  "version": "1.0.0",
+  "description": "A custom element that implements the fun-button tag",
+  "main": "fun-button.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiricon/fun-button.git"
+  },
+  "keywords": [
+    "custom",
+    "element",
+    "button",
+    "fun",
+    "component"
+  ],
+  "author": "Dominic Valenciana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kiricon/fun-button/issues"
+  },
+  "homepage": "https://github.com/Kiricon/fun-button#readme"
+}

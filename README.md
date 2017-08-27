@@ -1,48 +1,29 @@
-# fun-tabs
-An HTML custom element implementing the `<fun-tabs>` tag.
+# fun-button
+An HTML custom element implementing the `<fun-button>` tag.
 
-![fun-input in action](https://github.com/Kiricon/fun-tabs/raw/master/screencapture.gif)
+![fun-input in action](https://github.com/Kiricon/fun-button/raw/master/screencapture.gif)
 
 ## Setup
 
 ### Installation
 ```
-npm i fun-tabs
+npm i fun-button
 ```
 
 ---
 
 ```Html
-<script src="node_modules/fun-tabs/fun-tabs.js"></script>
+<script src="node_modules/fun-button/fun-button.js"></script>
 ```
 or if you're bundling
 ```Javascript
-import "fun-tabs";
+import "fun-button";
 // or
-require("fun-tabs");
+require("fun-button");
 ```
 
 
 ## Usage
 ```HTML
-    <fun-tabs selected="0">
-        <fun-tab>Tab 1</fun-tab>
-        <fun-tab>Tab 2</fun-tab>
-        <fun-tab>Tab 3</fun-tab>
-    </fun-tabs>
-```
-
-
-## Customization
-You can customize the color of the `fun-tabs` by assigning values to css elements. 
-
-The two css elements that affect `fun-tabs` are `--fun-tabs-color` and `--secondary-color`.
-
-You can set there values like so
-
-```CSS
-    :root {
-        --fun-tabs-color: red; /* if both are set --fun-tabs-color takes precedence */
-        --secondary-color: red; 
-    }
+    <fun-button>Button Content</fun-button>
 ```
